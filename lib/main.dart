@@ -7,9 +7,11 @@ main(List<String> args) {
   runApp(MyApp());
 }
 
+dynamic profileName = "Agit TM";
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Profile());
+    return MaterialApp(home: Profile(profileName));
   }
 }

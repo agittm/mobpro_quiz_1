@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:mobpro_quiz_1/main.dart';
 import 'package:mobpro_quiz_1/pages/edit_profile.dart';
 
 class Profile extends StatefulWidget {
   @override
   _ProfileState createState() => _ProfileState();
+
+  final String text;
+  Profile(this.text);
 }
 
 class _ProfileState extends State<Profile> {
@@ -26,7 +30,7 @@ class _ProfileState extends State<Profile> {
               ),
             ),
             Text(
-              'Agit TM',
+              profileName,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             )
           ],
